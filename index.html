@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John's Bookstor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">John's Bookstore</div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#books">Books</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">☰</div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to John's Bookstore</h1>
+        <p>Your bookstore is filled with stories and community.</p>
+        <a href="#books" class="cta-button">Shop Online</a>
+      </div>
+    </section>
+
+    <section class="featured" id="books">
+      <h2>New Reads</h2>
+      <div class="book-grid">
+        <div class="book-card">
+          <img src="images/book-1.jpg" alt="Book 1" />
+          <h3>Flowers on books</h3>
+          <p>by Smith John</p>
+          <span>$4.99</span>
+        </div>
+        <div class="book-card">
+          <img src="images/book-2.jpg" alt="Book 2" />
+          <h3>The Infinite</h3>
+          <p>by Doe Bob</p>
+          <span>$19.99</span>
+        </div>
+        <div class="book-card">
+          <img src="images/book-3.jpg" alt="Book 3" />
+          <h3>More Books</h3>
+          <p>by John Willams</p>
+          <span>$8.99</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-container">
+        <img src="images/book-4.jpg" alt="Bookstore interior" />
+        <div class="about-text">
+          <h2>About John's Bookstore</h2>
+          <p>
+            John's Bookstore is it's a warm community space where stories come
+            alive. Join our book readings, local author events, and cozy reading
+            books.Find latest books in our store upon relasing at cheap prise or
+            instore reading is totally free moreover cheap rental books prise.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Visit Us</h2>
+      <p>52 South Drive Street, Waterloo</p>
+      <a href="#" class="cta-button">Get Directions</a>
+    </section>
+
+    <footer>
+      <p>© 2025 John's Bookstore | Follow us on <a href="#">Instagram</a></p>
+    </footer>
+
+    <script>
+      const menu = document.getElementById("mobile-menu");
+      const navLinks = document.querySelector(".nav-links");
+      menu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
